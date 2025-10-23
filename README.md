@@ -7,7 +7,6 @@
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)](https://www.mongodb.com/)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)](https://vercel.com/)
 
-![AR Menu Demo](https://3d-armenu.vercel.app/menu/68f5f2a8aedfb569cdbacc49)
 
 ## 🎯 Overview
 
