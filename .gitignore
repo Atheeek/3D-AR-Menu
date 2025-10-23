@@ -1,0 +1,19 @@
+# .gitignore in E:\New 3D AR
+
+# Node modules in subfolders
+ar-menu-backend/node_modules/
+ar-menu-frontend/node_modules/
+
+# Next.js build folder
+ar-menu-frontend/.next/
+
+# Environment files (important!)
+ar-menu-backend/.env
+ar-menu-frontend/.env.local
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
