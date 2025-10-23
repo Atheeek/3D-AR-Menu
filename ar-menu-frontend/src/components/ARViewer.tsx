@@ -8,7 +8,7 @@ interface ARViewerProps {
 }
 
 const ARViewer = ({ modelUrl, iosModelUrl, itemName }: ARViewerProps) => {
-const modelScale = "0.05 0.05 0.05"; // 5% of original
+// const modelScale = "0.05 0.05 0.05"; // 5% of original
 
   return (
     <div className="w-full aspect-square relative bg-brand-dark rounded-t-lg overflow-hidden border-b border-gray-700/50">
@@ -16,7 +16,7 @@ const modelScale = "0.05 0.05 0.05"; // 5% of original
         src={modelUrl}
         ios-src={iosModelUrl}
         alt={`A 3D model of ${itemName}`}
-        scale={modelScale}
+        // scale={modelScale}
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
