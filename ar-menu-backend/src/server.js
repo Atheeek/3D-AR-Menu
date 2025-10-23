@@ -15,7 +15,10 @@ app.use(express.json());
 // CORS configuration to allow both local and network access
 const allowedOrigins = [
   'http://localhost:3000',
-  'http://192.168.0.101:3000' // Your computer's network IP
+  'http://192.168.0.101:3000', // Your computer's network IP
+  'http://10.4.5.219:3000', // Your computer's network IP
+
+  'https://3d-armenu.vercel.app/' // Add your Vercel URL
 ];
 
 const corsOptions = {
