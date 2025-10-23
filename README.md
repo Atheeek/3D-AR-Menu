@@ -7,19 +7,7 @@
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)](https://www.mongodb.com/)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)](https://vercel.com/)
 
-![AR Menu Demo](https://via.placeholder.com/800x400?text=AR+Menu+Platform+Demo)
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-- [Deployment](#deployment)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+![AR Menu Demo](https://3d-armenu.vercel.app/menu/68f5f2a8aedfb569cdbacc49)
 
 ## 🎯 Overview
 
@@ -92,7 +80,7 @@ Restaurant owners manage their entire menu through an intuitive admin dashboard,
 - **Database**: MongoDB Atlas
 
 ## 🏗️ Architecture
-
+```
 ┌─────────────────┐
 │ Customer │
 │ (Mobile) │
@@ -119,7 +107,7 @@ Restaurant owners manage their entire menu through an intuitive admin dashboard,
 │ (Database) │
 └─────────────┘
 
-text
+```
 
 ## 🚀 Getting Started
 
@@ -132,18 +120,19 @@ text
 ### Installation
 
 1. **Clone the repository**
+
+```bash   
 git clone https://github.com/yourusername/ar-menu-platform.git
 cd ar-menu-platform
 
-text
+```
 
-2. **Install Backend Dependencies**
+3. **Install Backend Dependencies**
 
 ```bash
 cd backend
 npm install
 ```
-text
 
 3. **Configure Backend Environment Variables**
 
@@ -201,13 +190,16 @@ npm run dev
 ### Frontend (Vercel)
 
 Install Vercel CLI
-npm i -g vercel
 
+```bash
+npm i -g vercel
+```
 Deploy
+
+```bash
 cd frontend
 vercel --prod
-
-text
+```
 
 Add environment variables in Vercel dashboard:
 - `NEXT_PUBLIC_API_URL`
