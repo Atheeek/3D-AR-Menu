@@ -21,12 +21,33 @@ const config = {
         'fade-in': {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(30px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
         }
       },
       animation: {
         'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
         'fade-in': 'fade-in 0.3s ease-out forwards',
+        'fadeInUp': 'fadeInUp 0.8s ease-out forwards',
+        'blob': 'blob 7s infinite',
       },
+       blob: {
+          '0%, 100%': {
+            transform: 'translate(0, 0) scale(1)',
+          },
+          '33%': {
+            transform: 'translate(30px, -50px) scale(1.1)',
+          },
+          '66%': {
+            transform: 'translate(-20px, 20px) scale(0.9)',
+          },
+        },
     },
   },
   plugins: [],

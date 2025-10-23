@@ -14,7 +14,7 @@ The **AR Menu Platform** is a web-based SaaS application designed for restaurant
 
 Restaurant owners manage their entire menu through an intuitive admin dashboard, complete with image uploads, 3D model integration, and QR code generation.
 
-### 🌟 Why AR Menus?
+###  Why AR Menus?
 
 - **86% increase in customer engagement** with AR menu interactions
 - **Visual ordering** reduces confusion and increases order accuracy

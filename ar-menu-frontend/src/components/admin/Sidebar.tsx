@@ -13,11 +13,10 @@ const Sidebar = () => {
     router.push('/admin/login'); // Redirect to login after logout
   };
 
-  const navItems = [
-    { href: '/admin/dashboard', label: 'Home', icon: FiHome },
-    // Add more links as needed
-    // { href: '/admin/analytics', label: 'Analytics', icon: FiBarChart2 },
-    // { href: '/admin/settings', label: 'Settings', icon: FiSettings },
+const navItems = [
+    { href: '/admin/dashboard', label: 'Dashboard', icon: FiHome },
+    { href: '/admin/settings', label: 'Settings', icon: FiSettings }, // Add Settings link
+    // Add other links like Analytics later
   ];
 
   return (
@@ -36,7 +35,7 @@ const Sidebar = () => {
               className={`flex items-center px-4 py-2.5 rounded-lg transition-colors duration-200 ${
                 isActive
                   ? 'bg-gray-100 text-brand-dark hover:bg-gray-200 font-semibold shadow-inner'
-                  : 'text-brand-text-secondary hover:bg-gray-700 hover:text-brand-text'
+                  : 'text-brand-text-secondary hover:bg-gray-300 hover:text-brand-text'
               }`}
             >
               <item.icon className="mr-3 h-5 w-5" />

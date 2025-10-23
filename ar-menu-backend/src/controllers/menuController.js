@@ -50,8 +50,7 @@ export const uploadModelImage = async (req, res) => {
       ContentType: req.file.mimetype,
     };
     await s3.upload(params).promise();
-    const photoUrl = `${process.env.R2_ENDPOINT}/${fileKey}`; // Ensure R2_ENDPOINT is the public URL base
-    // ar-menu-backend/src/controllers/menuController.js
+const photoUrl = `${process.env.R2_PUBLIC_URL}/${fileKey}`;    // ar-menu-backend/src/controllers/menuController.js
 
 // Correctly construct the public URL using the R2_PUBLIC_URL variable
 // const photoUrl = `${process.env.R2_PUBLIC_URL}/${fileKey}`;
@@ -127,6 +126,7 @@ export const getMenuItemsForRestaurant = async (req, res) => {
   try {
     // 1. Find the restaurant by ID and populate its menuItems field
     const restaurant = await Restaurant.findById(req.params.restaurantId)
+    .select('name logoUrl menuItems') // <-- Make sure logoUrl is selected
                                        .populate('menuItems'); // This fetches the linked MenuItem documents
 
     // 2. Check if the restaurant was found

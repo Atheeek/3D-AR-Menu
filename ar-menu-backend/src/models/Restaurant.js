@@ -21,6 +21,7 @@ const restaurantSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'MenuItem',
   }],
+  logoUrl: { type: String, required: false }, // Add this line
 }, { timestamps: true });
 
 // Middleware to hash password before saving
