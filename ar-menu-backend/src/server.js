@@ -18,7 +18,7 @@ const allowedOrigins = [
   'http://192.168.0.101:3000', // Your computer's network IP
   'http://10.4.5.219:3000', // Your computer's network IP
 
-  'https://3d-armenu.vercel.app/' // Add your Vercel URL
+  'https://3d-armenu.vercel.app' // Add your Vercel URL
 ];
 
 const corsOptions = {
